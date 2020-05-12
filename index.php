@@ -9,15 +9,14 @@
 </head>
 <body>
 <?php
-$array = [2,3,4,5,6,-1];
+$array = [2,3,4,-2,5,-3,6,-1];
 $min = $array[0];
 for ($i=0;$i<count($array);$i++) {
-    if ($min>$array[$i]) {
+    if ($min > $array[$i]) {
         $min = $array[$i];
-            echo "$min";
-
     }
 }
+echo "$min";
 ?>
 </body>
 </html>
